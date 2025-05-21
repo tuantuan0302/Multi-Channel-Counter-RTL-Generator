@@ -1,3 +1,40 @@
 # Multi-Channel Counter RTL Generator (MCC-RTLGen)
-MCC-RTLGen 是一个基于Python的工具，用于自动生成多通道计数器的Verilog RTL代码。该工具可以根据用户配置文件动态生成包含8位和32位计数器的寄存器读写模块（reg_rw.v）和顶层模块（cnt_top.v）。通过简单的配置文件，用户可以轻松地定义计数器的通道数量，而无需手动修改代码。
-#没有项目依赖，我只使用了python3
+
+## Introduction
+
+**MCC-RTLGen** is a Python-based tool designed to automatically generate Verilog RTL code for multi-channel counters. This tool dynamically generates the register read/write module (`reg_rw.v`) and the top-level module (`cnt_top.v`) based on user-defined configurations. With a simple configuration file, users can easily specify the number of 8-bit and 32-bit counter channels without manually modifying the code.
+
+## Project Structure
+MCC-RTLGen/
+├── generate_verilog.py       # Main script
+├── template/
+│   ├── def.txt               # Configuration file
+│   ├── cnt_top.v             # Top-level module template
+│   ├── cnt8.v                # 8-bit counter template
+│   ├── cnt32.v               # 32-bit counter template
+│   ├── reg_rw.v              # Register read/write module template
+├── reg_rw_out.v              # Generated register read/write module
+├── cnt_top_out.v             # Generated top-level module
+├── cnt8_out.v                # Generated 8-bit counter module
+├── cnt32_out.v               # Generated 32-bit counter module
+
+## Usage
+
+### Prerequisites
+Ensure you have Python 3 installed. This project does not require any external Python libraries.
+
+### Configuration File
+Create or edit the `def.txt` file in the `template/` directory to define the number of 8-bit and 32-bit counter channels. Example:
+ch_num_cnt8=6
+ch_num_cnt32=4
+
+
+
+#PS
+The generated files will be saved in the current directory:
+
+    reg_rw_out.v: Register read/write module
+    cnt_top_out.v: Top-level module
+    cnt8_out.v and cnt32_out.v: 8-bit and 32-bit counter modules (copied from template files)
+
+#For more detailed information and project notes, please visit the MCC-RTLGen project page on Yuque.
