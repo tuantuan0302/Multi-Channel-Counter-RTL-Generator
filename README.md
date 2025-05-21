@@ -37,4 +37,6 @@ The generated files will be saved in the current directory:
     cnt_top_out.v: Top-level module
     cnt8_out.v and cnt32_out.v: 8-bit and 32-bit counter modules (copied from template files)
 
-#For more detailed information and project notes, please visit the MCC-RTLGen project page on Yuque.
+# For more detailed information and project notes, please visit the MCC-RTLGen project page on Yuque.
+
+## https://www.yuque.com/yuqueyonghup60ypd/tuan_ic/qkv9dfpa28gxc3x4#
