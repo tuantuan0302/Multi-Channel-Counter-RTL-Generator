@@ -1,0 +1,2 @@
+ch_num_cnt8 = 6
+ch_num_cnt32 = 4
