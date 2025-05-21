@@ -13,7 +13,7 @@ MCC-RTLGen/
 │   ├── cnt8.v                # 8-bit counter template
 │   ├── cnt32.v               # 32-bit counter template
 │   ├── reg_rw.v              # Register read/write module template
-├── reg_rw_out.v              # Generated register read/write module
+│   ├── reg_rw_out.v              # Generated register read/write module
 ├── cnt_top_out.v             # Generated top-level module
 ├── cnt8_out.v                # Generated 8-bit counter module
 ├── cnt32_out.v               # Generated 32-bit counter module
